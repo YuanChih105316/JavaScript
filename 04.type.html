@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type</title>
+</head>
+<body>
+    <h1>Hey</h1>
+    <script>
+        let x = [0, 1, 2]
+        let y = [0, 1, 2]
+
+        console.log('x=y?', x==y);
+
+        const myName = 'Eason'
+        console.log('Hello', myName);
+        console.log('typeof', typeof myName);
+
+        const Hi = 'Hello'
+        console.log(Hi + ' ' + myName);
+
+        const h1_hi = document.querySelector('h1')
+        h1_hi.innerHTML = Hi + ' ' + myName
+
+        const newStringUsingBacktick = `${Hi}, I'm ${myName}.`;
+        Hi.innerHTML = newStringUsingBacktick
+        
+    </script>
+</body>
+</html>

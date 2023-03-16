@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+
+    <style>
+        h1 {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="myH1">Hey 1</h1>
+    <h1 class="myH1">Hey 2</h1>
+
+    <script>
+        // querySelectorAll選取出來的資料型態會是list，所以需具體指出要對哪個節點做改變
+        // const myH1 = document.querySelector('.myH1')
+        const myH1 = document.getElementsByClassName('myH1')
+        myH1[1].innerHTML = 'new H1 content'
+        myH1[1].style.color = 'blue'
+        myH1[1].style.backgroundColor = 'orange'
+        console.log(myH1);
+    </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMG Detail</title>
+
+    <style>
+        .imgWrap{
+            width: 600px;
+            height: 500px;
+        }
+
+        .imgWrap img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 0% 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="imgWrap">
+        <img src="./DSC09819.JPG" alt="Can't load!" title="Spiderman in the sea">
+    </div>
+    
+
+    <script>
+        const img = document.querySelector('.imgWrap img')
+        let origin = true
+
+        img.addEventListener('click', function(){
+            console.log('img clicked');
+        
+            if(origin){
+                img.setAttribute('src', 'https://cdn.pixabay.com/photo/2023/03/09/20/02/cat-7840767_960_720.jpg');
+            }
+            else{
+                img.setAttribute('src', './DSC09819.JPG')
+            }
+            origin = !origin
+        })
+
+    </script>
+</body>
+</html>
